@@ -3,9 +3,7 @@ const db = require('../../config/dbConfig');
 module.exports = {
 	find,
 	findById,
-	add,
-	update,
-	remove
+	add
 };
 
 function find() {
@@ -25,8 +23,3 @@ function add(dish) {
 		return findById(id);
 	});
 }
-
-// function update(id, changes){
-// return db('dishes')
-// .where({id})
-// }
